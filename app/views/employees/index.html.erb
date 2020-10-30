@@ -1,0 +1,9 @@
+<h2> Employee Directory </h2>
+
+<ul>
+<% @employees.each do |employee| %>
+   <li> <%= link_to employee.to_s, employee_path(employee) %></li>
+<% end %>
+</ul>
+
+<%= link_to "See All Dogs", dogs_path %>
